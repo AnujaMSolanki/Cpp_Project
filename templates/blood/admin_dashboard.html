@@ -1,0 +1,83 @@
+{% extends 'blood/adminbase.html' %}
+{% block content %}
+<br><br>
+<div class="container">
+
+    
+      <div class="row" style=" height: 400px;">
+        <div class="col-md-12">
+            <div class="row justify-content-center align-items-center" >
+                
+                <div class="col-md-6 text-center" >
+                    <canvas id="chart1" width="200" height="200"></canvas>
+                    <br>
+                    <h3> Blood Stock Available in Bank</h3>
+                </div>
+                <div class="col-md-5 ml-5 justify-content-center    " >
+                    
+                        <div class="col mt-2">
+                          <div class="card bg-light">
+                            <div class="card-body">
+                                <div class="blood">
+                                    <i class="fas fa-users"></i>
+                                </div><br>
+                                <div>
+                                    Total Donors <br>
+                                    {{totaldonors}}
+                                </div>                            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mt-2">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <div class="blood">
+                                        <i class="fas fa-spinner"></i>
+                                    </div><br>
+                                    <div>
+                                        Total Requests <br>
+                                       {{totalrequest}}
+                                    </div>                            
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col mt-2">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <div class="blood">
+                                        <i class="far fa-check-circle"></i>
+                                    </div><br>
+                                    <div>
+                                        Approved Requests <br>
+                                        {{totalapprovedrequest}}
+                                    </div>                            
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col mt-2">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <div class="blood">
+                                        <i class="fas fa-tint xyz"></i>
+                                    </div><br>
+                                    <div>
+                                        Total Blood Unit (in ml) <br>
+                                        {{totalbloodunit}}
+                                    </div>                            
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                 
+                
+                
+            </div>
+        </div>
+            
+        </div>
+   
+   
+</div>
+
+
+{% endblock content %}

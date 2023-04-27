@@ -1,0 +1,5 @@
+patient -> views.py
+
+folder rename Stringfunction to stringfunction
+
+stringfunction -> __init__.py
