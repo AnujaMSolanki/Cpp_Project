@@ -1,12 +1,5 @@
-# Blood Bank Management System
----
-## Screenshots
-### Homepage
-### Admin Dashboard
-### Blood Donation 
-### Blood Request
-### Logout
----
+# Blood Donation System
+
 ## Functions
 
 ### Admin
@@ -15,8 +8,7 @@
 py manage.py createsuperuser
 ```
 - After Login, can see Unit of blood of each blood group available, Number Of Donor, Number of blood request, Number of approved request, Total Unit of blood on Dashboard.
-- Can View, Update, Delete Donor.
-- Can View, Update, Delete Patient.
+- Can View, Update, Delete Donor and Patient.
 - Can View Donation Request made by donor and can approve or reject that request based on disease of donor.
 - If Donation Request approved by admin then that unit of blood added to blood stock of that blood group.
 - If Donation Request rejected by admin then 0 unit of blood added to stock.
@@ -30,10 +22,9 @@ py manage.py createsuperuser
 ### Donor
 - Donor can create account by providing basic details.
 - After Login, Donor can donate blood, After approval from admin only, blood will be added to blood stock.
-- Donor can see their donation history with status (Pending, Approved, Rejected).
+- Donor can see their donation and blood request history with status (Pending, Approved, Rejected).
 - Donor can also request for blood from blood stock.
 - Donor can see their blood request history with status.
-- Donor can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
 > **_NOTE:_**  Donor can donate blood and can also request for blood.
 
 
@@ -57,13 +48,4 @@ py manage.py createsuperuser
 python -m pip install -r requirements. txt
 ```
 
-```
-py manage.py makemigrations
-py manage.py migrate
-py manage.py runserver
-```
-- Now enter following URL in Your Browser Installed On Your Pc
-```
-http://127.0.0.1:8000/
-```
 
