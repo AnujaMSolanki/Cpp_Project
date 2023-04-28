@@ -15,14 +15,14 @@
       
         <div style="margin-left: 70px;" class="card card-5">
             <div class="card-heading">
-                <h2 class="title">MAKE BLOOD REQUEST</h2>
+                <h2 class="title">MAKE REQUEST FOR BLOOD</h2>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="color: aqua;">
                 <form method="POST" autocomplete="off" enctype="multipart/form-data">
                     {% csrf_token %}
 
                     <div class="form-row">
-                        <div class="name">Patient Name</div>
+                        <div class="name">Patient's Name</div>
                         <div class="value">
                             <div class="input-group">
                                 {% render_field request_form.patient_name|attr:'required:true'  class="input--style-5"  %}
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="name">Reason</div>
+                        <div class="name">Reason for Request</div>
                         <div class="value">
                             <div class="input-group">
                                 {% render_field request_form.reason|attr:'required:true'  class="input--style-5"  %}
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="name">Unit (in ml)</div>
+                        <div class="name">Unit of Blood required (in ml)</div>
                         <div class="value">
                             <div class="input-group">
                                 {% render_field request_form.unit|attr:'required:true'  class="input--style-5"  %}
@@ -79,11 +79,7 @@
                         </div>
                     </div>
 
-      <!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->              
+                
 
 
 
