@@ -69,3 +69,4 @@ urllib3==1.26.15
 webencodings==0.5.1
 wrapt==1.15.0
 xhtml2pdf==0.2.6
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
