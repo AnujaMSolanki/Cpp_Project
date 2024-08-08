@@ -13,7 +13,7 @@ coverage==7.2.3
 cryptography==40.0.2
 cssselect2==0.7.0
 dill==0.3.6
-Django==3.0.5
+Django==4.2.15
 django-phonenumber-field==2.2.0
 django-widget-tweaks==1.4.8
 exceptiongroup==1.1.1
