@@ -68,4 +68,4 @@ uritools==4.0.1
 urllib3==1.26.15
 webencodings==0.5.1
 wrapt==1.15.0
-xhtml2pdf==0.2.6
+xhtml2pdf==0.2.17
